@@ -1,6 +1,6 @@
 # simple-project
 
-![Build Status](https://travis-ci.org/nilbeleth/cleanCppProject.svg?branch=master)
+![Build Status](https://travis-ci.org/nilbeleth/sample-project.svg?branch=master)
 
 This is a "Hello world!!!" project in C++, which should serve as a cornerstone for any new project.
 
