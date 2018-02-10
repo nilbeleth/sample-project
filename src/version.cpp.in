@@ -32,7 +32,7 @@ long long Version::getVersionNumber()
 std::string Version::getVersionShort()
 {
     string version = to_string(getMajor()) + "." + to_string(getMinor()) + "." +
-                     to_string(getPatch()) + " @VERSION_TYPE@";
+                     to_string(getPatch()) + " @CMAKE_BUILD_TYPE@";
     return version;
 }
 //-----------------------------------------------------------------------------------

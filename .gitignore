@@ -1,0 +1,6 @@
+build/*
+external/*
+!external/CMakeLists.txt
+.codeblocks/*
+*.swp
+*.pyc
