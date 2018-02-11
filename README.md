@@ -27,6 +27,13 @@ git add .
 git commit -a "Initial commit"
 ~~~
 
+### If you ever want to update from this demo...
+
+~~~
+cd <yourNewProject>
+git pull --git-dir='.git-simple-demo'
+~~~
+
 ## Building instructions
 
 ### Prerequisites
