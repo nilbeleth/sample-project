@@ -76,3 +76,7 @@ make
     * *tidy*
     * *cppcheck*
 * External
+
+## TODOs
+
+This project is at its beginnings so there is plenty of work. So far I gather ideas [here](./doc/TODO.md).
