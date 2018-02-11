@@ -23,22 +23,22 @@ find_package(Threads REQUIRED) #Threading
 ## Project's executable setup
 ##
 
-add_executable(sample-project
+add_executable(${PROJECT_NAME}
     main.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/version.cpp)
 
-target_include_directories(sample-project PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
-target_link_libraries(sample-project PRIVATE ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_THREAD_LIBS_INIT})
 
 
-install(TARGETS sample-project
+install(TARGETS ${PROJECT_NAME}
     DESTINATION bin)
 
 
 add_custom_target(run
     WORKING_DIRECTORY ${CMAKE_INSTALL_PREFIX}/bin
-    COMMAND ./sample-project
+    COMMAND ./${PROJECT_NAME}
     DEPENDS Install_)
 
 
