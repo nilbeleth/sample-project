@@ -6,6 +6,7 @@
 ## Populate this directory with external projects used by this one
 ##
 
+include(ExternalProject)
 find_package(Git REQUIRED)
 
 
@@ -18,7 +19,7 @@ ExternalProject_Add(
     PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/Catch
     GIT_REPOSITORY https://github.com/catchorg/Catch2.git
     # For shallow git clone (without downloading whole history)
-    GIT_SHALLOW 1
+    #GIT_SHALLOW 1
     # disable auto update on every build
     UPDATE_DISCONNECTED 1
     # disable following
