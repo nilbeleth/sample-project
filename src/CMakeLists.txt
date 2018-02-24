@@ -23,8 +23,11 @@ find_package(Threads REQUIRED) #Threading
 ## Project's executable setup
 ##
 
+# gather all *.cpp files
+FILE(GLOB SRCS "*.cpp")
+
 add_executable(${PROJECT_NAME}
-    main.cpp
+    ${SRCS}
     ${CMAKE_CURRENT_BINARY_DIR}/version.cpp)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
