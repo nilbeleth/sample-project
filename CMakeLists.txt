@@ -6,7 +6,7 @@
 ## The project's main CMake configuration file.
 ##
 
-cmake_minimum_required (VERSION 2.8 FATAL_ERROR)
+cmake_minimum_required (VERSION 3.0 FATAL_ERROR)
 project (sample-project)
 enable_language(C CXX)
 
