@@ -1,9 +1,9 @@
 /**
-* @file      main.cpp
-* @copyright (c) 2018 by Matej Odalos <nilbeleth@valec.net>
-* @license   MIT, see the @c LICENSE file for more details
-* @brief     Interface for version informations.
-*/
+ * @file      version.cpp
+ * @copyright (c) 2018 by Matej Odalos <nilbeleth@valec.net>
+ * @license   MIT, see the @c LICENSE file for more details
+ * @brief     Interface for version informations.
+ */
 #include "version.h"
 
 using namespace std;

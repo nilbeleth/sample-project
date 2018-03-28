@@ -1,9 +1,9 @@
 /**
-* @file      main.cpp
-* @copyright (c) 2018 by Matej Odalos <nilbeleth@valec.net>
-* @license   MIT, see the @c LICENSE file for more details
-* @brief     Simple Hello world!!! application.
-*/
+ * @file      main.cpp
+ * @copyright (c) 2018 by Matej Odalos <nilbeleth@valec.net>
+ * @license   MIT, see the @c LICENSE file for more details
+ * @brief     Simple Hello world!!! application.
+ */
 #include <iostream>
 #include <cstdlib>
 #include "version.h"
@@ -24,6 +24,8 @@ using namespace std;
  */
 int main(int argc, char const* argv[])
 {
+    (void) argc;
+    (void) argv;
     cout << "Hello world! - " << Version::getBuildMachine() << endl;
 
     return EXIT_SUCCESS;

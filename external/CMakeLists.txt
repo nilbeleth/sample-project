@@ -18,22 +18,24 @@ ExternalProject_Add(
     Catch
     PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/Catch
     GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-    # For shallow git clone (without downloading whole history)
-    #GIT_SHALLOW 1
-    # disable auto update on every build
-    UPDATE_DISCONNECTED 1
-    # disable following
-    CONFIGURE_COMMAND "" BUILD_COMMAND "" INSTALL_DIR "" INSTALL_COMMAND ""
+    TIMEOUT 10
+    UPDATE_COMMAND ${GIT_EXECUTABLE} pull
+    CONFIGURE_COMMAND ""
+    BUILD_COMMAND ""
+    INSTALL_COMMAND ""
+    LOG_DOWNLOAD ON
     )
 
 # Update Catch target
-add_custom_target(external-Catch-update
+add_custom_target(external-catch-update
     COMMENT "Updated Catch"
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/Catch/src/Catch
     COMMAND ${GIT_EXECUTABLE} pull
     DEPENDS Catch)
-# set include directory
-set(EXTERNAL_CATCH_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Catch/src/Catch/single_include" PARENT_SCOPE)
+
+# expose required catch header path so it could be included where necessary
+ExternalProject_Get_Property(Catch SOURCE_DIR)
+set(CATCH_INCLUDE_DIR ${SOURCE_DIR}/single_include CACHE INTERNAL PARENT_SCOPE)
 
 
 #------------------------------------------------------------------------------

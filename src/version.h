@@ -1,9 +1,9 @@
 /**
-* @file      version.h
-* @copyright (c) 2018 by Matej Odalos <nilbeleth@valec.net>
-* @license   MIT, see the @c LICENSE file for more details
-* @brief     Interface for version informations.
-*/
+ * @file      version.h
+ * @copyright (c) 2018 by Matej Odalos <nilbeleth@valec.net>
+ * @license   MIT, see the @c LICENSE file for more details
+ * @brief     Interface for version informations.
+ */
 #ifndef VERSION_H_INCLUDED
 #define VERSION_H_INCLUDED
 #include <string>

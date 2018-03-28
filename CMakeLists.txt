@@ -6,7 +6,7 @@
 ## The project's main CMake configuration file.
 ##
 
-cmake_minimum_required (VERSION 3.0 FATAL_ERROR)
+cmake_minimum_required (VERSION 2.8 FATAL_ERROR)
 project (sample-project)
 enable_language(C CXX)
 
@@ -153,8 +153,8 @@ add_subdirectory(doc)
 add_subdirectory(src)
 
 # Testing
-enable_testing()
-add_subdirectory(tests)
+#enable_testing()
+#add_subdirectory(tests)
 
 
 ##-----------------------------------------------------------------------------
