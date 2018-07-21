@@ -1,23 +1,47 @@
-sudo: required
-dist: trusty
-language: cpp
+stages:
+  - prepare
+  - build
+#  - test
+#  - package
 
-matrix:
-    include:
-        - compiler: gcc
-          addons:
-            apt:
-                sources:
-                    - ubuntu-toolchain-r-test
-                packages:
-                    - g++-5
-          env: COMPILER=g++-5
+cache:
+  untracked: true
+  paths:
+    - build
+    - external
 
-before_install:
-    - sudo apt-get update -qq
-
-script:
+# Since we are using cache to persist all data, we need to clean in the first
+# step.
+prepare:
+  stage: prepare
+  script:
+    - git reset --hard HEAD
+    - git clean -d -f -x
     - mkdir build
     - cd build
-    - cmake -DCMAKE_CXX_COMPILER=$COMPILER ..
+    - cmake ..
+    - make external-update-all
+
+build:
+  stage: build
+  script:
+    - cd build
     - make
+    - make install
+    - make run
+
+#test:
+#  stage: test
+#  script:
+#    - cd build
+#    - make check
+#
+#package:
+#  stage: package
+#  artifacts:
+#    expire_in: 1 week
+#    paths:
+#      - build/out/
+#  script:
+#    - cd build
+#    - make package

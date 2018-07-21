@@ -6,7 +6,7 @@ This is a "Hello world!!!" project in C++, which should serve as a cornerstone f
 
 ## Features
 
- * General direcotry structure common to C++ projects
+ * General directory structure common to C++ projects
  * Modern, simple CMake build scripts, divided into several components for readability
  * Sane and simple targets for most basic build actions or more advanced for supplemental code analysis
  * Integration tests via **TODO**
