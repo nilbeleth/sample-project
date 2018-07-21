@@ -24,7 +24,7 @@ prepare:
     - mkdir build
     - cd build
     - cmake ..
-    - make external-update-all
+#    - make external-update-all
 
 build:
   stage: build
@@ -32,7 +32,7 @@ build:
     - cd build
     - make
     - make install
-    - make run
+#    - make run
 
 #test:
 #  stage: test
