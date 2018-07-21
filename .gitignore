@@ -4,3 +4,5 @@ external/*
 .codeblocks/*
 *.swp
 *.pyc
+.idea/
+cmake-build-debug/

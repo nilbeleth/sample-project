@@ -1,3 +1,3 @@
-# A list of potentional or planned improvements
+# A list of potential or planned improvements
 
  * [README.md:Features]: Just an idea, but this may be represented as a table with features and corresponding prerequisites...
