@@ -35,7 +35,8 @@ add_custom_target(external-catch-update
 
 # expose required catch header path so it could be included where necessary
 ExternalProject_Get_Property(Catch SOURCE_DIR)
-set(CATCH_INCLUDE_DIR ${SOURCE_DIR}/single_include CACHE INTERNAL PARENT_SCOPE)
+#set(CATCH_INCLUDE_DIR ${SOURCE_DIR}/single_include CACHE INTERNAL PARENT_SCOPE)
+set(CATCH_INCLUDE_DIR ${SOURCE_DIR}/single_include PARENT_SCOPE)
 
 
 #------------------------------------------------------------------------------
