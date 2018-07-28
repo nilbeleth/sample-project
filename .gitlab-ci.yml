@@ -23,7 +23,7 @@ prepare:
     - git clean -d -f -x
     - mkdir build
     - cd build
-    - cmake ..
+    - cmake .. -DCMAKE_INSTALL_PREFIX=./
     - make external-update-all
 
 build:

@@ -42,4 +42,4 @@ set(CATCH_INCLUDE_DIR ${SOURCE_DIR}/single_include CACHE INTERNAL PARENT_SCOPE)
 # Convenience update all
 add_custom_target(external-update-all
     COMMENT "Updated all external projects"
-    DEPENDS external-Catch-update)
+    DEPENDS external-catch-update)
