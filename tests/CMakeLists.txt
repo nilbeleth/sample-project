@@ -6,7 +6,7 @@
 ## Run the unit tests if requested.
 ##
 
-enable_testing()
+#enable_testing()
 
 add_executable(unit_testsuite EXCLUDE_FROM_ALL
     ../src/main.cpp test_main.cpp
