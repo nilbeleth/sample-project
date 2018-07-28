@@ -1,8 +1,8 @@
 /**
- * @file      test_main.cpp
+ * @file      test_version.cpp
  * @copyright (c) 2018 by Matej Odalos <nilbeleth@valec.net>
  * @license   MIT, see the @c LICENSE file for more details
- * @brief     Simple Hello world!!! application.
+ * @brief     A unit test for src/version.cpp
  */
 #include <catch2/catch.hpp>
 #include <version.h>

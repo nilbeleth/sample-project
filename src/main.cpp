@@ -7,26 +7,21 @@
 #include <iostream>
 #include <cstdlib>
 #include "version.h"
+#include "main.h"
 
 
 using namespace std;
 
 
-/**
- * @brief Entry point of application.
- * @param[in] argc Number of command line arguments.
- * @param[in] argv Command line passed to application.
- * @return @c returns true if application finishes without any error,
- *         @c false otherwise/
- *
- * This application actually does nothing besides printing simple message.
- *
- */
+#ifndef UNIT_TESTS
 int main(int argc, char const* argv[])
+#else
+int main_test(int argc, const char **argv)
+#endif
 {
-    (void) argc;
-    (void) argv;
-    cout << "Hello world! - " << Version::getBuildMachine() << endl;
+  (void) argc;
+  (void) argv;
+  cout << "Hello world! - " << Version::getBuildMachine() << endl;
 
-    return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }

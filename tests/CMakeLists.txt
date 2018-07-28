@@ -9,7 +9,7 @@
 enable_testing()
 
 add_executable(unittests EXCLUDE_FROM_ALL
-    test_main.cpp
+    ../src/main.cpp test_main.cpp
     ${CMAKE_BINARY_DIR}/src/version.cpp test_version.cpp)
 
 add_dependencies(unittests Catch)   # Catch is needed for unit tests
@@ -18,11 +18,13 @@ target_include_directories(unittests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../src)
 target_include_directories(unittests SYSTEM PRIVATE ${CATCH_INCLUDE_DIR})
 
 #add_custom_command(unit
-#    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-#    COMMAND $<TARGET_FILE:unittests>
-#    #COMMAND ./unittests
-#    COMMENT "Running unit test"
-#    DEPENDS unittests)
+#        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+#        COMMAND $<TARGET_FILE:unittests>
+#        #COMMAND ./unittests
+#        COMMENT "Running unit test"
+#        DEPENDS unittests
+#        VERBATIM)
+
 #
 #add_custom_command(unitall
 #    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/tests
