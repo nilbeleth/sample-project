@@ -1,7 +1,7 @@
 stages:
   - prepare
   - build
-#  - test
+  - test
 #  - package
 
 cache:
