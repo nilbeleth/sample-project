@@ -38,8 +38,7 @@ test:
   stage: test
   script:
     - cd build
-    - make unit_testsuite
-    - make test
+    - make check
 
 #package:
 #  stage: package
