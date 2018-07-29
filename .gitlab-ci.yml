@@ -1,7 +1,7 @@
 stages:
   - prepare
   - build
-#  - test
+  - test
 #  - package
 
 cache:
@@ -12,7 +12,7 @@ cache:
 
 before_script:
  - apt-get update --yes
- - apt-get install --yes cmake
+ - apt-get install --yes cmake gcc g++ clang
 
 # Since we are using cache to persist all data, we need to clean in the first
 # step.
@@ -23,8 +23,8 @@ prepare:
     - git clean -d -f -x
     - mkdir build
     - cd build
-    - cmake ..
-#    - make external-update-all
+    - cmake .. -DCMAKE_INSTALL_PREFIX=./
+    - make external-update-all
 
 build:
   stage: build
@@ -32,14 +32,14 @@ build:
     - cd build
     - make
     - make install
-#    - make run
+    - make run
 
-#test:
-#  stage: test
-#  script:
-#    - cd build
-#    - make check
-#
+test:
+  stage: test
+  script:
+    - cd build
+    - make check
+
 #package:
 #  stage: package
 #  artifacts:
