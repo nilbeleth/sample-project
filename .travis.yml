@@ -21,3 +21,4 @@ script:
     - cd build
     - cmake -DCMAKE_CXX_COMPILER=$COMPILER ..
     - make
+    - make check
