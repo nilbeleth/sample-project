@@ -5,11 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
- - write a new README
- - added support for Travis CI
+ - add support for code coverage
+
+
+## [0.1.0] - 2018-08-04
+### Added
+ - new README and CHANGELOG
+ - support for Travis and GitLab CI
  - support for fetching external project dependencies
- - transition to GitLab along with CI support
- - add support for unit tests via [Catch](https://github.com/catchorg/Catch2)
+ - support for unit tests via [Catch](https://github.com/catchorg/Catch2)
 
 ## [0.0.2] - 2018-02-10
 ### Added
@@ -20,4 +24,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Starting point of the project
 
 [Unreleased]: https://gitlab.com/nilbeleth/sample-project/compare/v0.0.2...HEAD
+[0.0.2]: https://gitlab.com/nilbeleth/sample-project/compare/v0.0.2...v0.1.0
 [0.0.2]: https://gitlab.com/nilbeleth/sample-project/compare/v0.0.1...v0.0.2
