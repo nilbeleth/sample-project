@@ -58,10 +58,10 @@ TEST_CASE( "Check the version number constants", "[version][accessors]" ) {
 
   SECTION("Verify the version number getters") {
     REQUIRE(0==Version::getMajor());
-    REQUIRE(0==Version::getMinor());
-    REQUIRE(1==Version::getPatch());
+    REQUIRE(1==Version::getMinor());
+    REQUIRE(0==Version::getPatch());
 
-    REQUIRE(1==Version::getVersionNumber());
+    REQUIRE(10000==Version::getVersionNumber());
   }
 }
 
