@@ -1,4 +1,4 @@
-image: ubuntu:18
+image: ubuntu:18.04
 
 stages:
   - prepare
