@@ -16,7 +16,7 @@ cache:
 before_script:
  - uname -a
  - apt-get update --yes
- - apt-get install --yes cmake gcc g++ clang
+ - apt-get install --yes cmake gcc g++ clang git
  - date
 
 # Since we are using cache to persist all data, we need to clean in the first
