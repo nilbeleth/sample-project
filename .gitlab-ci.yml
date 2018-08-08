@@ -6,9 +6,10 @@ stages:
 
 cache:
   untracked: true
+  key: sample-project
   paths:
-    - build
-    - external
+    - build/
+    - external/
 
 before_script:
  - uname -a
