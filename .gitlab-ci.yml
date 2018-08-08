@@ -6,6 +6,7 @@ stages:
 
 cache:
   untracked: true
+  key: "$CI_BUILD_NAME"
   paths:
     - build
     - external
