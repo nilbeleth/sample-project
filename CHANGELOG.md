@@ -23,6 +23,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Starting point of the project
 
-[Unreleased]: https://gitlab.com/nilbeleth/sample-project/compare/v0.0.2...HEAD
+[Unreleased]: https://gitlab.com/nilbeleth/sample-project/compare/v0.1.0...HEAD
 [0.1.0]: https://gitlab.com/nilbeleth/sample-project/compare/v0.0.2...v0.1.0
 [0.0.2]: https://gitlab.com/nilbeleth/sample-project/compare/v0.0.1...v0.0.2
