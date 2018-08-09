@@ -4,7 +4,7 @@ This is a "Hello world!!!" project in C++, which should serve as a cornerstone f
 
 | CI            | Builds        | Tests | Coverage  |
 |           --- |           ---:|   ---:|       ---:|
-| Tavis         | ![Build Status](https://travis-ci.org/nilbeleth/sample-project.svg?branch=master) | N/A  | N/A |
+| Travis        | ![Build Status](https://travis-ci.org/nilbeleth/sample-project.svg?branch=master) | N/A  | N/A |
 | GitLab        | [![pipeline status](https://gitlab.com/nilbeleth/sample-project/badges/master/pipeline.svg)](https://gitlab.com/nilbeleth/sample-project/commits/master)   |  N/A |   [![coverage report](https://gitlab.com/nilbeleth/sample-project/badges/master/coverage.svg)](https://gitlab.com/nilbeleth/sample-project/commits/master) |
 
 
